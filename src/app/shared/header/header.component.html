@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="logo">
+    <img src="images/ecrc.webp" alt="Embu County Logo" />
+    <span>Embu County Revenue Authority</span>
+  </div>
+
+ <button class="menu-toggle" [class.open]="isMenuOpen" (click)="toggleMenu()" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <nav class="nav" [class.open]="isMenuOpen">
+    <a routerLink="/admin" routerLinkActive="active" (click)="closeMenu()">Admin</a>
+    <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Home</a>
+    <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
+    <a routerLink="/departments" routerLinkActive="active" (click)="closeMenu()">Departments</a>
+    <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Services</a>
+    <a routerLink="/revenue-streams" routerLinkActive="active" (click)="closeMenu()">Revenue streams</a>
+    <a routerLink="/news" routerLinkActive="active" (click)="closeMenu()">News</a>
+    <a routerLink="/tenders" routerLinkActive="active" (click)="closeMenu()">Tenders</a>
+    <a routerLink="/downloads" routerLinkActive="active" (click)="closeMenu()">Downloads</a>
+    <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+  </nav>
+</header>
