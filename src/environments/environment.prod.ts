@@ -2,7 +2,7 @@ export const environment = {
   production: true,
 
   // Your local API if you ever use it
-  apiUrl: 'https://embucra-backend.onrender.com',
+  apiUrl: 'https://embucra-backend.onrender.com/api/',
 
   // Your Google Analytics MEASUREMENT ID (only used for page tracking)
   googleAnalyticsId: 'G-CM6W7ZZCDN',
