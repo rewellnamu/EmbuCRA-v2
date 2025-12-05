@@ -1,16 +1,12 @@
 export const environment = {
   production: true,
+  apiUrl: 'https://embucra-backend.onrender.com/api',  // ✅ No trailing slash
 
-  // Your local API if you ever use it
-  apiUrl: 'https://embucra-backend.onrender.com/api/',
-
-  // Your Google Analytics MEASUREMENT ID (only used for page tracking)
   googleAnalyticsId: 'G-CM6W7ZZCDN',
-
-  // Google OAuth + GA4 property (needed for real analytics data)
+  
   google: {
-    clientId: '1035165035948-e7a8fkeit9s59k11rva46b2fj35dd3nl.apps.googleusercontent.com',           // from Google Cloud
-    analyticsPropertyId: '514609774'        // example: 420123456
+    clientId: '1035165035948-e7a8fkeit9s59k11rva46b2fj35dd3nl.apps.googleusercontent.com',
+    analyticsPropertyId: '514609774'
   },
 
   admin: {
