@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RevenueStreamsComponent } from './revenue-streams.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('RevenueStreamsComponent', () => {
   let component: RevenueStreamsComponent;
@@ -8,7 +9,8 @@ describe('RevenueStreamsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RevenueStreamsComponent]
+      imports: [RevenueStreamsComponent,
+        HttpClientTestingModule]
     })
     .compileComponents();
 

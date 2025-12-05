@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
 import { ServicesComponent } from './services.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('ServicesComponent', () => {
   let component: ServicesComponent;
@@ -10,7 +11,8 @@ describe('ServicesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ServicesComponent],
+      imports: [ServicesComponent,
+        HttpClientTestingModule],
       providers: [
         {
           provide: ActivatedRoute,

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing'; // ✅ Add this import
 import { AdminDashboardComponent } from './admin-dashboard.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AdminDashboardComponent', () => {
   let component: AdminDashboardComponent;
@@ -11,7 +12,8 @@ describe('AdminDashboardComponent', () => {
       imports: [
         AdminDashboardComponent,
         RouterTestingModule // ✅ Add this line
-      ]
+      ,
+        HttpClientTestingModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AdminDashboardComponent);
