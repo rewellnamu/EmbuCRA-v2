@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://embucra-backend.onrender.com',  // ✅ No trailing slash
+  apiUrl: 'https://embucra-mongodb.onrender.com',  // ✅ No trailing slash
 
   googleAnalyticsId: 'G-CM6W7ZZCDN',
   
